@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.point{
+    width: 100%;
+    height: 2200px;
+   overflow-wrap: break-word;
+   min-height: 100vh;
+   font-family: Canva Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+.header{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(223, 222, 222);
+    display: flex;
+    position: fixed;
+    top: -0.10rem;
+    z-index: 100;
+}
+.profile{
+    width: 100px;
+    height: 100%;
+    margin-left: 50px;
+}
+.menu{
+    width: 50%;
+    height: 100%;
+    margin-left: 40%;
+}
+.mysidebar{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 36px;
+    color: rgb(255, 255, 255); 
+}
+.trol{
+    text-decoration: none;
+    color: rgb(61, 53, 53);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+}
+.trol::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: rgb(86, 85, 85);
+    transition: 300ms;
+}
+.trol:hover::after{
+    width: 100%;
+}
+.picture{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+.control-content{
+    width: 100%;
+    height: 2000px;
+}
+.container-1{
+    width: 100%;
+    height: 250px;
+    margin-top: 9rem;
+    display: flex;
+   justify-content: center;
+    margin-left: -30px;
+    padding-right: 50px;
+}
+.container-2{
+    width: 100%;
+    height: 250px;
+    margin-top: 50px;
+    display: flex;
+   justify-content: center;
+    margin-left: -30px;
+    padding-right: 50px;
+    margin-top: 9rem;
+}
+.container-3{
+    width: 100%;
+    height: 250px;
+    margin-top: 50px;
+    display: flex;
+   justify-content: center;
+    margin-left: -30px;
+    padding-right: 50px;
+    margin-top: 9rem;
+}
+.container-4{
+    width: 100%;
+    height: 250px;
+    margin-top: 50px;
+    display: flex;
+   justify-content: center;
+    margin-left: -30px;
+    padding-right: 50px;
+    margin-top: 9rem;
+}
+.col{
+    border-radius: 10px;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    margin-left: 120px;
+    box-shadow: 0px 0px 3px 3px rgba(55, 54, 54, 0.4);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.col:hover{
+    margin-top: -25px;
+    box-shadow: 0px 0px 5px 5px rgba(114, 80, 80, 0.4);
+}
+.pic{
+    object-fit: cover;
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+footer{
+    width: 100%;
+    height: 550px;
+    
+    margin-top: 250px;
+}
+.social{
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+}
+.social-img{
+    width: 100%;
+    height: 60%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    padding-left: 40px;
+    padding-top: 10px;
+  
+    transition: 0.5s;
+}
+.social-img:hover{
+    width: 100%;
+    height: 65%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.link-end{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.column1{
+    width: 33.3%;
+    height: 100%;
+    
+}
+
+.column2{
+    width: 33.3%;
+    height: 100%;
+    
+}
+.column3{
+    width: 33.3%;
+    height: 100%;
+  
+}
+.item-link{
+    margin-left: 40%;
+    margin-top: 4%;
+    text-decoration: none;
+    display: inline-block;
+}
+.item-link::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: rgb(86, 85, 85);
+    transition: 300ms;
+}
+.item-link:hover::after{
+    width: 100%;
+}
+.p{
+    margin-left: 40%;
+}
+.add-to-cart-button {
+    display: none;
+    margin-left: 34px;
+    margin-top: 13%;
+    position: absolute;
+    padding: 8px 30px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.price{
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 10%;
+    margin-left: -20px;
+    background-color: #4caf50;
+    width: 60px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+.titile-1{
+    display: inline-block;
+    cursor: pointer;
+}
+.titile-1::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: rgb(169, 56, 56);
+    transition: 300ms;
+}
+.titile-1:hover::after{
+    width: 100%;
+}

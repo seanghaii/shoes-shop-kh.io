@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="website icon" type="png" href="icon logo website.png">
+    <title>Login</title>
+    <link rel="stylesheet" href="login-form.css">
+    <script src="check.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <h2 id="login-text">Login</h2>
+        <div class="contener">
+            <div class="login-form">
+                <label class="label-name" for="fname">Full Name</label>
+                <input type="text" placeholder="Name" id="username"><br>
+         
+                <label class="label-mail" for="email">Email</label>
+                <input type="text" placeholder="Email" id="email"><br>
+        
+                <label class="label-pass" for="password">Password</label>   
+                <input type="password" placeholder="Password" id="password"><br><br>
+                <input type="checkbox" onclick="myFunction()">
+                <label for="show" id="show-pass"> Show Password</label><br>
+        
+                <input type="checkbox" class="check" name="check">
+                <label id="check" for="check">Agree</label><br>
+        
+                <!-- Submit button -->
+                <button id="submit" type="submit">Login</button>
+        
+                <!-- Sign up link -->
+                <p class="register">Not a member? <a href="http://127.0.0.1:5500/html/login-register/register.html">Register here!</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("submit").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent form submission
+        
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+        
+            // Check if the username, email, and password are correct
+            if (username === "Hai" && email === "hai@gmail.com" && password === "5656") {
+                window.location.href = "http://127.0.0.1:5500/shoes%20shop/shoes%20shop.html"; // Redirect to YouTube
+            } else {
+                alert("Incorrect username, email, or password"); // Show error message
+            }
+        });
+    </script>
+</body>
+</html>
